@@ -1,6 +1,9 @@
 \documentclass[11pt,a4paper]{report}
+
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
+\usepackage{graphicx}
+
 \author{Benjamin Pajusco et Paul ALNET}
 \title{Systèmes électoraux: enjeux et  emplois au sein des démocraties}
 \date{2020}
@@ -8,8 +11,23 @@
 % Pour citer sans que cela n'aparaisse on utilise \nocite{bibid}
 % On pourra éventuellement les changer automatiquement en \cite
 
+% For the title background, via https://tex.stackexchange.com/questions/46280/how-to-create-a-background-image-on-title-page-with-latex
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+	\put(0,-180){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics[width=\paperwidth,height=\paperheight,%
+			keepaspectratio]{background.jpg}%
+			\vfill
+			
+}}
+	\put(100,36){\tiny{Photo par @element5digital sur Unsplash, légèrement altérée}}
+}
+
 \begin{document}
-	
+\AddToShipoutPicture*{\BackgroundPic}
 \maketitle
 
 \textbf{Quelles sont les différentes approches pour donner la voix au peuple, leurs évolutions et quelles sont les conséquences de leurs implémentations?}
