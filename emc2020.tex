@@ -31,7 +31,7 @@
 \AddToShipoutPicture*{\BackgroundPic}
 \maketitle
 
-\textbf{Quelles sont les différentes approches pour donner la voix au peuple, leurs évolutions et quelles sont les conséquences de leurs implémentations?}
+\textbf{Quelles sont les différentes approches pour donner de la voix au peuple, leurs évolutions et quelles sont les conséquences de leurs implémentations?}
 
 \section*{Introduction}
  L'avenant des gouvernements, la transition progressive vers des états plus démocratiques, le pouvoir théoriquement donné au au peuple, nécessite l'apport d'une méthode pour permettre à chaque citoyen de faire entendre sa voix, son opinion. \nocite{wiki:demo}
@@ -46,8 +46,6 @@
  \nocite{viepub:scrutins}
  
    Les modèles des démocraties modernes ne sont pas apparues instantanément mais découlent de plus de deux millénaires d'évolution.
-
-TODO peaufiner
 
 \tableofcontents
 
@@ -94,7 +92,7 @@ La France, pays des droits de l’Homme, fut un pilier de la popularisation de l
 Nous allons nous intéresser ici à la Seconde République étant donné qu’aucune élection présidentielle n'a eu lieu durant la première république\nocite{wiki:deuxiemerep}.
 La seconde république représente la toute première élection présidentielle en France (1848)\nocite{wiki:1848}.
 Ce vote s'est effectué par scrutin direct uninominal.
-Il est élu au suffrage universel masculin car les femmes n’ont pas le droit de vote. Cependant ses lois se sont amélioré et peaufiné au file du temps \nocite{wiki:premiererep}
+Il est élu au suffrage universel masculin car les femmes n’ont pas le droit de vote. Cependant ces lois se sont amélioré et peaufiné au file du temps. \nocite{wiki:premiererep}
 
 \chapter{Méthodes d'élection}
 \section{France} % TODO rename
@@ -157,10 +155,6 @@ Si jamais la majorité absolue n’est pas atteinte par l’un des deux candidat
 \nocite{wiki:elecus}
 \nocite{wiki:eleccoll}
 
-
-\section{Systèmes divers} % TODO
-
-
 \chapter{Impact sur la démocratie}
 % TODO intro
 
@@ -196,7 +190,7 @@ Un avantage est la Représentation régionale plus équitable.
 On donne ici une force plus ou moins équitable à chaque État, petit ou grand.
 Le problème de cet avantage est aussi un inconvénient.
 Si un petit État possède une force plus ou moins égale à celle dans un plus grand État, chaque habitant ne possède pas le même impact sur l'élection du président.
-La voix d’un habitant d’un tout petit état vaudra alors beaucoup plus que quelqu’un dans un grand état. *TODO ex cal*
+La voix d’un habitant d’un tout petit état vaudra alors beaucoup plus que quelqu’un dans un grand état.
 Cela apporte donc un nouveau désavantage qui est qu’un candidat peut passer à la tête d’un pays alors qu’il ne possède pas la majorité du vote populaire, ce qui s’est produit en 1824, 1876, 1888, 2000 et 2016.
 Un autre avantage de ce système est le résultat.
 Si jamais il y a des problèmes de fraudes en termes de votes ou quoi que ce soit en terme de doute, il n’est pas nécessaire de recompter les votes de l'entièreté du pays mais uniquement les états dans lesquels le doute est posé.
@@ -234,7 +228,52 @@ Ici le carré ne possède pas du tout la majorité des votes (seulement ~35\%) m
 C'est arrivé en 2000 quand Ralph Nader et Al Gore se sont partagé les votes ce qui a permis à George Bush de gagner.
 \nocite{ncase:ballot}
 
+\section{Systèmes de vote alternatifs}
+Il existe en effet un bon nombre de moyens d’élire une ou plusieurs personnes.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{./images/transfer.png}
+	\caption{Papier de vote utilisant le vote unique transférable, ici utilisé pour les élections nationales en Irlande, via thejournal.ie \cite{thejournal:ireland}}
+	\label{sim:transfer-ex}
+\end{figure}
+
+Par exemple, l'Irlande utilise le Scrutin à vote unique transférable (fig.\ref{sim:transfer-ex}).
+Cette méthode permet de choisir parmi plusieurs en les classant. Plutôt que de choisir un candidat, on classe les candidats sous forme de classement.
+Pour compter qui gagne, on additionne les places de chacun et comme le golf, celui avec le moins de points gagne.
+Ce système est assez vicieux car il avantage les candidats favorisés mais pénalise les candidats défavorisés.
+Il pourrait être très intéressant en démocratie afin d'éliminer les candidats en mauvaise posture mais il semble tout de même trop punitif.
+Un désavantage de ce dernier est évidemment le dépouillage qui est ici beaucoup plus complexe qu’un dépouillage de Scrutin simple comme celui utilisé par la France.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{./images/vote-unique-tranferable.png}
+	\caption{Exemple de vote unique transférable, via ncase.me \cite{ncase:ballot}}
+	\label{sim:transfer}
+\end{figure}
+
+Ce dernier permet de corriger le problème de l’effet “spoiler” causé par les scrutin simple ne comportant qu’un seul choix par vote (fig.\ref{sim:transfer}).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{./images/scores.png}
+	\caption{Exemple de vote par score, via ncase.me \cite{ncase:ballot}}
+	\label{sim:stars}
+\end{figure}
+
+Une autre méthode de vote par score (fig.\ref{sim:stars}).
+Cette méthode offre aux électeurs la possibilité de choisir un score (par exemple de 1 à 5) pour chacun des candidats.
+Sera élu le candidat avec le meilleur score moyen.
+Ce dernier est plus pratique pour les électeurs que  le scrutin à vote unique transférable car il n’a pas à choisir si un candidat est meilleur que l’autre et peut mettre deux candidats au même niveau.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{./images/star.png}
+	\caption{Fiche de vote par score, via wikipedia \cite{wiki:scorevoting}}
+	\label{sim:scores}
+\end{figure}
+
+Ce système est une fois de plus moins pratique pour le dépouillage mais extrêmement bénéfique car il a aussi l’effet “spoiler” (fig.\ref{sim:scores}).
 
 \section{Coût des élections}
 Les élections d'envergure nationale, qu'elles soient présidentielles, législatives ou encore municipales, constituent des acteurs politiques et économiques importants.
@@ -273,7 +312,9 @@ Les scrutins pourraient réduire ces effets nuisant à l'économie notamment en 
 
 \newpage
 \section*{Conclusion}
-TODO
+Nous avons vu comment les systèmes électoraux ont évolué en symbiose avec les démocraties qu'elles desservent. De l'Ecclésia aux Républiques modernes, les modèles sur lesquels reposent la prospérité des nations et la confiance du peuple sont critiques pour aller nos pays dans les directions que les citoyens désirent. Leur impacte sur l'économie ne doit cependant pas être ignoré.
+
+Nous avons également décelé que ceux que l'on employait et emploie diffèrent mais ne sont nullement parfaits. Chacun a ses défauts et avantages, variant de pays en pays, de territoires en territoires. Pour ce qu'il en est des systèmes électoraux, on peut citer l'économiste Thomas Sowell qui nous dit "There are no solutions, only tradeoffs", "Il n'y a pas de solutions, seulement des compromis". Nul n'est pas parfait, mais on peut tout de même choisir une combinaison plus adaptée.
 
 \bibliography{bibliography} 
 \bibliographystyle{ieeetr}
