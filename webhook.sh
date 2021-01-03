@@ -4,6 +4,9 @@ git pull
 
 # Build
 echo "2. Building with pdflatex"
+makeindex emc2020.idx
+bibtex emc2020.aux
+makeglossaries emc2020
 pdflatex -synctex=1 -interaction=nonstopmode emc2020.tex
 
 # Copy to server directory
